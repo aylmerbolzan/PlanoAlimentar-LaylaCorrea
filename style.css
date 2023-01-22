@@ -1,7 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  padding: 120px;
-  background-image: url(./img/bg-mobile.jpg);
+  padding: 40px 120px;
+  background-image: url(./assets/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+}
+
+.imgRefeicao {
+  border-radius: 50%;
+  width: 30vh;
+  border: 2px solid rgb(82, 54, 160);
+  position: relative;
+  float: right;
+  margin: 10px;
+}
+
+.accordion-body {
+  position: relative;
+}
+
+#flush-collapse1 {
+  /* background-color: #707e8b; */
+}
+
+#logo {
+  width: 30vh;
+  display: block;
+margin: 0 auto 50px;
 }
