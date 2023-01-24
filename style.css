@@ -62,15 +62,11 @@ dd {
 }
 
 .print {
-  display: none;
-}
-.noprint {
   display: block;
 }
 
-.header-p {
-display: flex;
-flex-direction: column;
+.noprint {
+  display: none;
 }
 
 #logo-p {
@@ -101,10 +97,15 @@ flex-direction: column;
 
 @media print {
   .print {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .noprint {
     display: none;
+  }
+
+  .break-after {
+    page-break-before: always;
   }
 }
