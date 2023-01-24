@@ -6,6 +6,10 @@
   font-weight: 500;
 }
 
+/* .noprint {
+  display: none;
+} */
+
 body {
   padding: 40px 40vh;
   background-image: url(./assets/bg.jpg);
@@ -15,7 +19,7 @@ body {
 }
 
 #logo {
-  width: 30vh;
+  width: 200px;
   display: block;
   margin: 0 auto 50px;
   color: #fafafa;
@@ -26,12 +30,12 @@ li {
 }
 
 dd {
-  opacity: 65%;
+  opacity: 75%;
 }
 
 .imgRefeicao {
   border-radius: 50%;
-  width: 25vh;
+  width: 180px;
   border: 2px solid #fff;
   position: relative;
   float: right;
@@ -54,11 +58,11 @@ dd {
   padding: 10px 15px 15px;
   border-radius: 20px;
   border-style: dashed;
+  margin-top: 35px;
 }
 
 .obs {
   list-style-type: none;
-  text-decoration: underline;
   margin-top: 25px;
 }
 
@@ -67,7 +71,7 @@ dd {
     padding: 40px 8vh;
   }
   .imgRefeicao {
-    width: 23vh;
+    width: 150px;
   }
 }
 
@@ -76,10 +80,6 @@ dd {
     padding: 40px 2vh;
   }
   .imgRefeicao {
-    width: 20vh;
+    width: 130px;
   }
-}
-
-#flush-collapse1 {
-  /* background-color: #707e8b; */
 }
