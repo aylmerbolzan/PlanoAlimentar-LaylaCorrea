@@ -68,11 +68,6 @@ dd {
   display: block;
 }
 
-.header-p {
-display: flex;
-flex-direction: column;
-}
-
 #logo-p {
   width: 100px;
   position: fixed;
