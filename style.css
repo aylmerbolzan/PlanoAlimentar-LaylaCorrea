@@ -81,6 +81,14 @@ flex-direction: column;
   margin: 10px;
 }
 
+.body-p div:nth-child(n + 2) {
+  page-break-before: always; 
+}
+
+.body-p h3 {
+  margin: 20px 0 50px;
+}
+
 @media (max-width: 1100px) {
   body {
     padding: 40px 8vh;
@@ -107,4 +115,7 @@ flex-direction: column;
   .noprint {
     display: none;
   }
+
+  body {
+    padding: 0 40px;
 }
