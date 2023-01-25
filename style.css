@@ -224,6 +224,10 @@ dd {
     display: none;
   }
 
+  #shortcuts {
+    display: none;
+  }
+
   body {
     padding: 0 40px;
   }
