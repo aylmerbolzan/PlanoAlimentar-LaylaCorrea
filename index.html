@@ -14,9 +14,46 @@
     <title>Plano Alimentar - Layla Corrêa</title>
   </head>
   <body>
-    <div class="noprint">
+    <div id="login">
+      <div class="container">
+        <div id="icon">
+          <img
+            src="./assets/logo.png"
+            onClick="window.open('https://wa.me/5527992436547', '_blank');"
+            style="cursor: pointer"
+            alt="icon"
+            class="icon"
+          />
+        </div>
+
+        <form id="form">
+          <div class="form-inputs">
+            <div class="form-control">
+              <label for="user">Usuário:</label>
+              <input type="text" name="user" id="user" />
+            </div>
+            <div class="form-control">
+              <label for="pass">Senha:</label>
+              <input type="password" name="pass" id="pass" />
+            </div>
+          </div>
+
+          <div class="action-control">
+            <button id="enviar">Enviar</button>
+            <button id="limpar">Limpar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="noprint" class="hide">
       <header>
-        <img src="./assets/logo.png" id="logo" />
+        <img
+          src="./assets/logo.png"
+          onClick="window.open('https://wa.me/5527992436547', '_blank');"
+          style="cursor: pointer"
+          id="logo"
+        />
         <div class="titulo">
           <h4>Plano Alimentar Personalizado</h4>
           <h5 style="padding-bottom: 30px">Layla, César e Judá ♡<br /></h5>
@@ -174,7 +211,15 @@
             >
               <img src="./img/Refeição 3.jpg" class="imgRefeicao" />
               <ul>
-                <li>Aipim cozido</li>
+                <li>
+                  Aipim cozido
+                  <dl>
+                    <dd>
+                      Se desejar, pode saltear o Aipim na manteiga e azeite,
+                      após cozido
+                    </dd>
+                  </dl>
+                </li>
                 <li>Feijão com Beterraba ralada</li>
                 <li>Couve refogada com Ora-Pró-Nobis</li>
                 <li>
@@ -1640,7 +1685,7 @@
               ;
               class="accordion-body"
             >
-            <img src="./img/Info.jpg" class="imgRefeicao" />
+              <img src="./img/Info.jpg" class="imgRefeicao" />
               <ul>
                 <li style="list-style-type: none">
                   As sugestões para o jantar são o reaproveitamento de sobras.
@@ -1840,7 +1885,8 @@
           tampa.
         </h6>
       </div>
-
+    </div>
+    <div id="shortcuts" class="hide">
       <div id="print-btn">
         <img
           id="imagem_print"
@@ -1859,7 +1905,7 @@
       </div>
     </div>
 
-    <div class="print">
+    <div id="print">
       <div class="header-p">
         <img src="./assets/logo-p.png" id="logo-p" />
       </div>
@@ -1935,7 +1981,15 @@
         <div id="refeicao3-p">
           <h3>Refeição 3</h3>
           <ul>
-            <li>Aipim cozido</li>
+            <li>
+              Aipim cozido
+              <dl>
+                <dd>
+                  Se desejar, pode saltear o Aipim na manteiga e azeite, após
+                  cozido
+                </dd>
+              </dl>
+            </li>
             <li>Feijão com Beterraba ralada</li>
             <li>Couve refogada com Ora-Pró-Nobis</li>
             <li>
@@ -2694,7 +2748,7 @@
       </div>
     </div>
   </body>
-
+  <script src="./script.js"></script>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"

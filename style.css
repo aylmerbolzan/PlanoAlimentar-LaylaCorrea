@@ -14,11 +14,96 @@ body {
   background-size: cover;
 }
 
+.hide {
+  display: none !important;
+}
+
+/* COMEÇO DO CODE DO LOGIN */
+
+.container {
+  width: 330px !important;
+  background-color: #fff;
+  padding: 1.5rem !important;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px #dac195;
+  animation: appear 1s forwards;
+}
+
+.icon {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+#icon {
+  display: flex;
+  justify-content: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: none !important;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #ad8844;
+  opacity: 60%;
+}
+
+.form-control input {
+  width: 100%;
+  color: #ad8844;
+  padding: 0.65rem 0.5rem;
+  border-radius: 2rem;
+  border: 2px solid #cfd0d1;
+}
+
+.form-control input:focus {
+  outline: none;
+  border: 2px solid #c6ce9b;
+}
+
+.action-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+button {
+  text-transform: uppercase;
+  padding: 0.7rem 1.5rem;
+  background-color: #77d17b;
+  border: none;
+  border-radius: 3px !important;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.9;
+  flex: 1;
+  border-radius: 1rem;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* FIM DO CODE DO LOGIN */
+
 .titulo {
   text-align: center;
   color: #ad8844;
+  margin-bottom: 22px;
 }
-
 
 #logo {
   width: 200px;
@@ -88,11 +173,12 @@ dd {
   bottom: 10px;
 }
 
-.print {
+#print {
   display: none;
 }
-.noprint {
+#noprint {
   display: block;
+  animation: appear 0.65s forwards;
 }
 
 #logo-p {
@@ -130,15 +216,25 @@ dd {
 }
 
 @media print {
-  .print {
+  #print {
     display: block;
   }
 
-  .noprint {
+  #noprint {
     display: none;
   }
 
   body {
     padding: 0 40px;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
