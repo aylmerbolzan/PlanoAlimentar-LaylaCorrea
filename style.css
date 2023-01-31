@@ -45,6 +45,11 @@ body {
   justify-content: space-between;
 }
 
+#user,
+#pass {
+  padding-left: 15px;
+}
+
 .form-control {
   display: flex;
   flex-direction: column;
